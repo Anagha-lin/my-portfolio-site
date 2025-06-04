@@ -1,20 +1,42 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
 	  return (
-		      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-4">
-		        <h1 className="text-4xl font-bold text-center text-indigo-700">Linus Irefo Anagha</h1>
-		        <p className="mt-4 text-lg text-center max-w-xl">
-		          Frontend Developer • Researcher • Teacher • School Proprietor
-		        </p>
+		      <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-green-100 to-emerald-200 px-4">
+		        <div className="flex flex-col items-center text-center max-w-2xl w-full p-6 bg-white shadow-xl rounded-xl border border-green-300">
+		          <div className="mb-6">
+		            <Image
+		              src="/images/linusssss.jpg"
+		              alt="Linus Anagha"
+		              width={160}
+		              height={160}
+		              className="rounded-full border-4 border-green-600 shadow-lg"
+		            />
+		          </div>
 
-		        <div className="mt-6 space-x-4">
-		          <Link href="/About" className="px-4 py-2 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700">
-		            About Me
-		          </Link>
-		          <a href="/Linus_Anagha_Frontend_Developer_CV.docx" download className="px-4 py-2 bg-gray-800 text-white rounded shadow hover:bg-gray-900">
-		            Download CV
-		          </a>
+		          <h1 className="text-4xl font-bold text-green-900 mb-2">Linus Irefo Anagha</h1>
+		          <p className="text-md text-gray-700 mb-6">
+		            Frontend Developer • Environmental Researcher • Teacher • School Proprietor
+		          </p>
+
+		          <div className="flex flex-wrap justify-center gap-4">
+		            <Link href="/About">
+		              <button className="bg-green-700 hover:bg-green-800 text-white px-5 py-2 rounded-full shadow transition">
+		                About Me
+		              </button>
+		            </Link>
+		            <a href="/Linus_Anagha_Frontend_Developer_CV.docx" download>
+		              <button className="bg-gray-700 hover:bg-gray-800 text-white px-5 py-2 rounded-full shadow transition">
+		                Download CV
+		              </button>
+		            </a>
+		            <a href="mailto:linusanagha37@gmail.com">
+		              <button className="bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2 rounded-full shadow transition">
+		                Contact
+		              </button>
+		            </a>
+		          </div>
 		        </div>
 		      </div>
 		    );
