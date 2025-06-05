@@ -20,7 +20,7 @@ export default function Home() {
 		            Frontend Developer • Environmental Researcher • Teacher • School Proprietor
 		          </p>
 
-		          <div className="flex flex-wrap justify-center gap-4">
+		          <div className="flex flex-wrap justify-center gap-4 mb-4">
 		            <Link href="/About">
 		              <button className="bg-green-700 hover:bg-green-800 text-white px-5 py-2 rounded-full shadow transition">
 		                About Me
@@ -36,6 +36,19 @@ export default function Home() {
 		                Contact
 		              </button>
 		            </a>
+		          </div>
+
+		          <div className="flex flex-wrap justify-center gap-4 mt-2">
+		            <Link href="/Publications">
+		              <button className="bg-green-800 hover:bg-green-900 text-white px-5 py-2 rounded-full shadow transition">
+		                View Publications
+		              </button>
+		            </Link>
+		            <Link href="/School">
+		              <button className="bg-lime-600 hover:bg-lime-700 text-white px-5 py-2 rounded-full shadow transition">
+		                My School
+		              </button>
+		            </Link>
 		          </div>
 		        </div>
 		      </div>
