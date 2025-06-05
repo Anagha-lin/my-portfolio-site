@@ -26,7 +26,7 @@ export default function Home() {
 		                About Me
 		              </button>
 		            </Link>
-		            <a href="/Linus_Anagha_Frontend_Developer_CV.docx" download>
+		            <a href="/tech cv.pdf" download>
 		              <button className="bg-gray-700 hover:bg-gray-800 text-white px-5 py-2 rounded-full shadow transition">
 		                Download CV
 		              </button>
