@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
 	  return (
-		      <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-green-100 to-emerald-200 px-4">
+		      <div className="min-h-screen w-full overflow-x-hidden bg-gradient-to-br from-green-100 to-emerald-200 px-4 flex items-center justify-center">
 		        <div className="flex flex-col items-center text-center max-w-2xl w-full p-6 bg-white shadow-xl rounded-xl border border-green-300">
 		          <div className="mb-6">
 		            <Image
@@ -20,32 +20,32 @@ export default function Home() {
 		            Frontend Developer • Environmental Researcher • Teacher • School Proprietor
 		          </p>
 
-		          <div className="flex flex-wrap justify-center gap-4 mb-4">
-		            <Link href="/About">
-		              <button className="bg-green-700 hover:bg-green-800 text-white px-5 py-2 rounded-full shadow transition">
+		          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 w-full mb-4">
+		            <Link href="/About" className="w-full sm:w-auto">
+		              <button className="w-full sm:w-auto bg-green-700 hover:bg-green-800 text-white px-5 py-2 rounded-full shadow transition">
 		                About Me
 		              </button>
 		            </Link>
-		            <a href="/tech cv.pdf" download>
-		              <button className="bg-gray-700 hover:bg-gray-800 text-white px-5 py-2 rounded-full shadow transition">
+		            <a href="/Linus_Anagha_Frontend_Developer_CV.docx" download className="w-full sm:w-auto">
+		              <button className="w-full sm:w-auto bg-gray-700 hover:bg-gray-800 text-white px-5 py-2 rounded-full shadow transition">
 		                Download CV
 		              </button>
 		            </a>
-		            <a href="mailto:linusanagha37@gmail.com">
-		              <button className="bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2 rounded-full shadow transition">
+		            <a href="mailto:linusanagha37@gmail.com" className="w-full sm:w-auto">
+		              <button className="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2 rounded-full shadow transition">
 		                Contact
 		              </button>
 		            </a>
 		          </div>
 
-		          <div className="flex flex-wrap justify-center gap-4 mt-2">
-		            <Link href="/Publications">
-		              <button className="bg-green-800 hover:bg-green-900 text-white px-5 py-2 rounded-full shadow transition">
+		          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 w-full">
+		            <Link href="/Publications" className="w-full sm:w-auto">
+		              <button className="w-full sm:w-auto bg-green-800 hover:bg-green-900 text-white px-5 py-2 rounded-full shadow transition">
 		                View Publications
 		              </button>
 		            </Link>
-		            <Link href="/School">
-		              <button className="bg-lime-600 hover:bg-lime-700 text-white px-5 py-2 rounded-full shadow transition">
+		            <Link href="/School" className="w-full sm:w-auto">
+		              <button className="w-full sm:w-auto bg-lime-600 hover:bg-lime-700 text-white px-5 py-2 rounded-full shadow transition">
 		                My School
 		              </button>
 		            </Link>
